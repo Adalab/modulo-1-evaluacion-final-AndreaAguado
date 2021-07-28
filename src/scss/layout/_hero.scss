@@ -1,0 +1,38 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  position: absolute;
+
+  .title-container {
+    background-color: lightblue;
+    margin: 0 15px;
+  }
+
+  .title {
+    text-align: center;
+    font-family: $title-font;
+    font-size: 42px;
+    word-spacing: 100vw;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  .subtitle-container {
+    background-color: lightcoral;
+    margin: 0 15px;
+    margin-top: 10px;
+  }
+  .subtitle {
+    font-family: $texts-font;
+    color: $white;
+  }
+}
