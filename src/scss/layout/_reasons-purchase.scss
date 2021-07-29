@@ -1,9 +1,13 @@
 .reasons-purchase {
   background-color: $ice-blue;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 20%);
-  grid-template-areas: "title" "article1" "article2" "article3" "button";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: repeat(5, 20%);
+  // grid-template-areas: "title" "article1" "article2" "article3" "button";
+
   .title-container {
     margin-top: 30px;
     margin-left: 15px;
@@ -14,6 +18,12 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33.33%);
+    grid-template-areas: "article1" "article2" "article3";
   }
   .article1 {
     grid-area: "article1";
@@ -26,6 +36,10 @@
   }
 
   .button {
+    margin-top: 45px;
+    margin-left: 68px;
+    margin-right: 68px;
+    margin-bottom: 22.5px;
     background-color: $bright-orange;
     border: 2px solid $bright-orange;
     color: $white;
@@ -36,20 +50,20 @@
     font-size: 20px;
     height: 45px;
     width: 184px;
-    margin-left: 68px;
-    margin-right: 68px;
-    margin-bottom: 60px;
     border-radius: 22.5px;
     line-height: 41px;
     display: inline-block;
   }
+
   .round-button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -22.5px;
+    // border: solid 1px orchid;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // position: relative;
+    // top: 22.5px;
+    transform: translateY(22.5px);
   }
   .round-button {
     background-color: $white;
