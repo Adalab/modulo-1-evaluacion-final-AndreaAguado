@@ -33,8 +33,9 @@
     font-family: $texts-font;
     color: $white;
   }
+
   .round-button {
-    background-color: $white;
+    background: $white;
     height: 45px;
     width: 45px;
     margin-top: 45px;
@@ -44,5 +45,6 @@
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
+    display: inline-block;
   }
 }
