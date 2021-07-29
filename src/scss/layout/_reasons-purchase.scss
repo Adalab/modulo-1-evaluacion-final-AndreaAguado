@@ -41,7 +41,6 @@
     margin-right: 68px;
     margin-bottom: 22.5px;
     background-color: $bright-orange;
-    border: 2px solid $bright-orange;
     color: $white;
     text-align: center;
     text-decoration: none;
@@ -53,6 +52,12 @@
     border-radius: 22.5px;
     line-height: 41px;
     display: inline-block;
+    transition: color ease 1s, background-color ease 1s, box-shadow ease 1s;
+    &:hover {
+      background: $lightblue;
+      color: $dark-grey-blue;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    }
   }
 
   .round-button-container {
