@@ -25,4 +25,24 @@
   .article3 {
     grid-area: "article3";
   }
+
+  .button {
+    background-color: $bright-orange;
+    border: 2px solid $bright-orange;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    font-family: $texts-font;
+    font-weight: 400;
+    font-size: 20px;
+    height: 45px;
+    width: 184px;
+    padding-left: 30.5px;
+    padding-right: 29.5px;
+    // margin-left: 15px;
+    // margin-bottom: 45px;
+    border-radius: 22.5px;
+    line-height: 45px;
+    display: inline-block;
+  }
 }
