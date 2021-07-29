@@ -1,4 +1,5 @@
 .tips {
+  background-color: $white;
   .small-title {
     font-family: $texts-font;
     font-size: 14px;
@@ -19,11 +20,32 @@
   }
   .container {
     margin: 0 15px;
+    margin-bottom: 30px;
+    .paragraph {
+      font-family: $texts-font;
+      font-size: 18px;
+      line-height: 30px;
+      color: $greyish-brown;
+    }
   }
-  .paragraph {
-    font-family: $texts-font;
-    font-size: 18px;
-    line-height: 30px;
-    color: $greyish-brown;
+
+  .button {
+    background-color: $white;
+    border: 2px solid $bright-orange;
+    height: 45px;
+    width: 76px;
+    margin-left: 15px;
+    margin-bottom: 45px;
+    border-radius: 45px;
+    line-height: 45px;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      font-family: $texts-font;
+      font-weight: 500;
+      font-size: 20px;
+      color: $bright-orange;
+    }
   }
 }
