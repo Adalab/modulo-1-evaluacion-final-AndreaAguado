@@ -44,11 +44,12 @@
     display: inline-block;
   }
   .round-button-container {
-    border: orchid solid 1px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: -22.5px;
   }
   .round-button {
     background-color: $white;
@@ -58,5 +59,6 @@
     border-radius: 50%;
     text-align: center;
     display: inline-block;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   }
 }
