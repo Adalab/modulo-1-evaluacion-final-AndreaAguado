@@ -1,0 +1,27 @@
+.reason {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title-container {
+    margin-right: 68px;
+    margin-left: 68px;
+    margin-top: 0px;
+    .title {
+      font-family: $title-font;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .description-container {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    .description {
+      font-family: $texts-font;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

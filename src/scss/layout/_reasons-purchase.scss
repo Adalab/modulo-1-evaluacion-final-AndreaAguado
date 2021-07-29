@@ -1,0 +1,28 @@
+.reasons-purchase {
+  background-color: $ice-blue;
+  display: grid;
+  border: orangered solid 2px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 20%);
+  grid-template-areas: "title" "article1" "article2" "article3" "button";
+  .title-container {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .title {
+    font-family: $title-font;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .article1 {
+    grid-area: "article1";
+  }
+  .article2 {
+    grid-area: "article2";
+  }
+  .article3 {
+    grid-area: "article3";
+  }
+}
