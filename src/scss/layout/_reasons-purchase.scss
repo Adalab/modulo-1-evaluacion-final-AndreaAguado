@@ -1,7 +1,6 @@
 .reasons-purchase {
   background-color: $ice-blue;
   display: grid;
-  border: orangered solid 2px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 20%);
   grid-template-areas: "title" "article1" "article2" "article3" "button";
@@ -41,7 +40,23 @@
     margin-right: 68px;
     margin-bottom: 60px;
     border-radius: 22.5px;
-    line-height: 45px;
+    line-height: 41px;
+    display: inline-block;
+  }
+  .round-button-container {
+    border: orchid solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .round-button {
+    background-color: $white;
+    height: 45px;
+    width: 45px;
+    line-height: 55px;
+    border-radius: 50%;
+    text-align: center;
     display: inline-block;
   }
 }
