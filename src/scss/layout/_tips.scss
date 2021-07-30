@@ -2,32 +2,72 @@
   background-color: $white;
   .small-title {
     font-family: $texts-font;
+    text-transform: capitalize;
     font-size: 14px;
     line-height: 30px;
     color: $lightblue;
     margin-top: 30px;
     margin-left: 15px;
     display: inline-block;
+    @media all and (min-width: 768px) {
+      margin-left: 39px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+      margin-left: 275px;
+      margin-top: 60px;
+    }
   }
   .title-container {
     margin: 0 15px;
     margin-bottom: 15px;
+    @media all and (min-width: 768px) {
+      margin-left: 39px;
+      margin-bottom: 30px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-left: 275px;
+      margin-bottom: 30px;
+    }
     .main-title {
       font-family: $title-font;
       font-size: 24px;
       line-height: 30px;
       color: $black;
+      text-transform: capitalize;
+      @media all and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 45px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 32px;
+        line-height: 45px;
+      }
     }
   }
 
   .container {
     margin: 0 15px;
     margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+      margin: 0 39px;
+      margin-bottom: 30px;
+    }
+    @media all and (min-width: 1200px) {
+      margin: 0 275px;
+      margin-bottom: 30px;
+    }
     .paragraph {
       font-family: $texts-font;
       font-size: 18px;
       line-height: 30px;
       color: $greyish-brown;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -51,6 +91,14 @@
     &:hover {
       background: $bright-orange;
       color: $white;
+    }
+    @media all and (min-width: 768px) {
+      margin-left: 39px;
+      width: 91px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-left: 275px;
+      width: 160px;
     }
   }
 }
