@@ -4,24 +4,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .title-container {
-    margin-right: 68px;
-    margin-left: 68px;
+  .reason-title-container {
     margin-top: 0px;
-    .title {
+    @media all and (min-width: 768px) {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .reason-title {
       font-family: $title-font;
       font-size: 18px;
       line-height: 30px;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 24px;
+      }
     }
   }
   .description-container {
-    margin-left: 70px;
-    margin-right: 70px;
+    // margin-left: 70px;
+    // margin-right: 70px;
     text-align: center;
+    @media all and (min-width: 768px) {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
     .description {
       font-family: $texts-font;
       font-size: 18px;
       line-height: 30px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 20px;
+      }
     }
   }
 }

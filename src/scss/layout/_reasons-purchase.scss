@@ -3,42 +3,89 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: repeat(5, 20%);
-  // grid-template-areas: "title" "article1" "article2" "article3" "button";
+  justify-content: center;
 
   .title-container {
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
+    @media all and (min-width: 768px) {
+      margin-top: 30px;
+      margin-left: 158px;
+      margin-right: 160px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-top: 60px;
+      margin-left: 275px;
+      margin-right: 275px;
+    }
   }
   .title {
     font-family: $title-font;
+    text-transform: capitalize;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+      line-height: 45px;
+    }
   }
   .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 33.33%);
     grid-template-areas: "article1" "article2" "article3";
+    align-items: center;
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "article1" "article2" "article3";
+      margin-left: 35.7px;
+      margin-right: 40px;
+    }
+    @media all and (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "article1" "article2" "article3";
+      margin-left: 81.2px;
+      margin-right: 85px;
+    }
   }
   .article1 {
     grid-area: "article1";
+    @media all and (min-width: 768px) {
+      // justify-self: center;
+    }
+    @media all and (min-width: 1200px) {
+      // justify-self: center;
+    }
   }
   .article2 {
     grid-area: "article2";
+    @media all and (min-width: 768px) {
+      // justify-self: center;
+    }
+    @media all and (min-width: 1200px) {
+      // justify-self: center;
+    }
   }
   .article3 {
     grid-area: "article3";
+    @media all and (min-width: 768px) {
+      // justify-self: center;
+    }
+    @media all and (min-width: 1200px) {
+      // justify-self: center;
+    }
   }
 
   .button {
     margin-top: 45px;
-    margin-left: 68px;
-    margin-right: 68px;
     margin-bottom: 22.5px;
     background-color: $bright-orange;
     color: $white;
@@ -57,6 +104,14 @@
       background: $lightblue;
       color: $dark-grey-blue;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    }
+    @media all and (min-width: 768px) {
+      margin-top: 60px;
+      width: 210px;
+    }
+    @media all and (min-width: 1200px) {
+      margin-top: 60px;
+      width: 255px;
     }
   }
 
