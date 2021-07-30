@@ -1,5 +1,5 @@
 .reason {
-  margin-top: 45px;
+  // background-color: chartreuse;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,15 +7,14 @@
   .reason-title-container {
     margin-top: 0px;
     @media all and (min-width: 768px) {
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-bottom: 14px;
     }
     @media all and (min-width: 1200px) {
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-bottom: 14px;
     }
     .reason-title {
       font-family: $title-font;
+      font-weight: 700;
       font-size: 18px;
       line-height: 30px;
       @media all and (min-width: 768px) {
@@ -27,16 +26,20 @@
     }
   }
   .description-container {
-    // margin-left: 70px;
-    // margin-right: 70px;
+    margin: 0 70px;
+    margin-bottom: 45px;
+    // background-color: crimson;
     text-align: center;
     @media all and (min-width: 768px) {
       margin-right: 0px;
       margin-left: 0px;
+      margin-bottom: 60px;
     }
     @media all and (min-width: 1200px) {
       margin-right: 0px;
       margin-left: 0px;
+      max-width: 353.8px;
+      margin-bottom: 60px;
     }
     .description {
       font-family: $texts-font;
