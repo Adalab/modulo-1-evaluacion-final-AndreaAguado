@@ -55,10 +55,7 @@
   .small-print-container {
     margin-bottom: 45px;
     @media all and (min-width: 768px) {
-      order: -1;
-    }
-    @media all and (min-width: 1200px) {
-      order: -1;
+      // order: -1;
     }
   }
   .heart {
